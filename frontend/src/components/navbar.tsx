@@ -1,31 +1,29 @@
-import styles from "../src/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { Link } from 'react-router-dom';
 import { ConnectButton } from "thirdweb/react";
-import { client  } from '../src/client';
-import { defineChain } from "thirdweb";
+import { client } from '../client';
 
 const Navbar = () => {
-    const myChain = defineChain({
-        id: 534351,
-        rpc: "https://sepolia-rpc.scroll.io/",
-    })
     return (
         <div className={styles.navbar}>
             <div className={styles.navbarLogo}>
-                <h1 className="text-2xl font-bold">./KOFTA</h1>
+                <h1 className="text-3xl font-bold">CloakLend</h1>
             </div>
             <div className={styles.navbarLinks}>
                 <Link to={"/"}>
                     <p>Home</p>
                 </Link>
-                <Link to={"/playground"}>
-                    <p>Playground</p>
+                <Link to={"/dashboard"}>
+                    <p>Dashboard</p>
                 </Link>
-                <Link to={"/minter"}>
-                    <p>Minter</p>
+                <Link to={"/lend"}>
+                    <p>Lend</p>
                 </Link>
-                <Link to={"/marketplace"}>
-                    <p>Marketplace</p>
+                <Link to={"/borrow"}>
+                    <p>Borrow</p>
+                </Link>
+                <Link to={"/repay"}>
+                    <p>Repay</p>
                 </Link>
                 <Link to={"/profile"}>
                     <p>Profile</p>
@@ -33,7 +31,6 @@ const Navbar = () => {
             </div>
             <ConnectButton
                 client={client}
-                chain={myChain}
             />
         </div>
     )
