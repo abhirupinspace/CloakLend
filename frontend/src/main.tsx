@@ -13,16 +13,12 @@ import Profile from "./pages/Profile";
 import Repay from "./pages/Repay";
 
 
-
-
 const queryClient = new QueryClient();
-
 
 createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
         <QueryClientProvider client={queryClient}>
         <ThirdwebProvider>
-        <RemoveScrollBar />
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<App />} />
@@ -33,6 +29,7 @@ createRoot(document.getElementById("root")!).render(
                     <Route path='/repay' element={<Repay />} />
                 </Routes>
             </BrowserRouter>
-        </ThirdwebProvider></QueryClientProvider>
+        </ThirdwebProvider>
+    </QueryClientProvider>
     </React.StrictMode>
 );
