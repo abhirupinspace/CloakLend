@@ -6,7 +6,7 @@ const Profile = () => {
         <main>
             <Navbar />
             <div className='bg-cover h-screen bg-fixed bg-[url("./assets/bg.png")] '>
-                
+            <h1>Profile</h1>
             </div>
         </main>
     )

@@ -6,7 +6,7 @@ const Lend = () => {
         <main>
             <Navbar />
             <div className='bg-cover h-screen bg-fixed bg-[url("./assets/bg.png")] '>
-
+            <h1>Lend</h1>
             </div>
         </main>
     )

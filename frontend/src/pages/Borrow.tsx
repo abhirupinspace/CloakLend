@@ -6,7 +6,7 @@ const Borrow = () => {
         <main>
             <Navbar />
             <div className='bg-cover h-screen bg-fixed bg-[url("./assets/bg.png")] '>
-                
+                <h1>Borrow</h1>
             </div>
         </main>
     )

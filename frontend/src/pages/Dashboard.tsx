@@ -6,7 +6,7 @@ const Dashboard = () => {
         <main>
             <Navbar />
             <div className='bg-cover h-screen bg-fixed bg-[url("./assets/bg2.png")] '>
-                
+            <h1>Dashboard</h1>
             </div>
         </main>
     )
